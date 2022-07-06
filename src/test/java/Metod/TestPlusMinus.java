@@ -1,3 +1,6 @@
+package Metod;
+
+import Metod.PlusMinusMethod;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

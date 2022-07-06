@@ -1,15 +1,11 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeOptions;
 
-public class EYUkraineHomePage extends TestInit{
-
-    public EYUkraineHomePage(Object driver) {
-        super();
+public class EYUkraineHomePage extends BasePage{
+    public EYUkraineHomePage(WebDriver driver) {
+        super(driver);
     }
-    public WebDriver driver;
-    ChromeOptions options = new ChromeOptions();
 
     public void navigateEYUkraine() {
         driver.get("https://www.ey.com/en_ua");
@@ -21,6 +17,10 @@ public class EYUkraineHomePage extends TestInit{
 
     public WebElement getMyaccountEY() {
         return driver.findElement(By.xpath("//a[@class='my-ey-login-state__logged-out']"));
+    }
+
+    public WebElement getCookies1() {
+        return driver.findElement(By.xpath("//button[@class='ant-btn hide-mobile ant-btn-primary']"));
     }
 
     public WebElement getSignIn() {

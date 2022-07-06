@@ -1,9 +1,7 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestEYUkraine {
-
-    private Object driver;
+public class TestEYUkraine extends TestInit{
 
     @Test
     public void eyukraineCheckLogin() {
