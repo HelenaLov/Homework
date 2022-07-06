@@ -1,3 +1,6 @@
+package Metod;
+
+import Metod.MultiplicationDivisionMethod;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
